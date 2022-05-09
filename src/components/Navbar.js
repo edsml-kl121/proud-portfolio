@@ -12,8 +12,8 @@ export default function Navbar2() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#projects" className="text-white">Projects</Nav.Link>
-            <Nav.Link href="#workexp" className="text-white">Work Experience</Nav.Link>
+            {/* <Nav.Link href="#projects" className="text-white">Projects</Nav.Link>
+            <Nav.Link href="#workexp" className="text-white">Work Experience</Nav.Link> */}
           </Nav>
             <NavDropdown title={<span className="text-white my-auto">Contact</span>} id="basic-nav-dropdown">
               <NavDropdown.Item href="https://www.linkedin.com/in/kandanai/">Linkedin</NavDropdown.Item>

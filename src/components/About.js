@@ -10,7 +10,8 @@ export default function About() {
     <section id="about">
       <Container>
       <Row className="my-5">
-        <Col xs={12} md={5} className="mt-5 my-5 mx-5 mb-5">
+        <Col xs={12} md={5} className="mt-5 my-5 mb-5">
+          <br></br>
           <br></br>
           <br></br>
           <br></br>
@@ -21,9 +22,9 @@ export default function About() {
             src= {Bathy}
             />
         </Col>
+        <Col md={1}>
+        </Col>
         <Col xs={12} md={5}>
-          <br></br>
-          <br></br>
           <br></br>
           <br></br>
           <h1 className="mt-5 text-success mx-1" style={{fontWeight:"700", fontSize:"100px"}}>
@@ -33,8 +34,9 @@ export default function About() {
               A Software Engineer / Data Scientist
             </h2>
           <p className="text-left">
-            I have graduated with a bachelor in mathematics at Warwick, then became interested in coding and went to 
-            a coding bootcamp at Lewagon followed by a Masters in Environmental Data Science and Machine Learning
+            I have graduated with a bachelor in <span className="text-success">mathematics at Warwick </span>, then became interested in coding and went to 
+            a <span className="text-success">coding bootcamp at Lewagon</span> followed by a Masters in <span className="text-success">Environmental Data Science and Machine Learning at Imperial. </span>
+             I have a strong interest in bringing positive impact to Thailand with technology such as Environmental and educational aspects through startups
           </p>
           <div className="flex justify-center mb-5">
             <a
