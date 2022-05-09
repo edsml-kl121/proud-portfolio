@@ -31,7 +31,7 @@ export default function Phone(prop) {
         ⚠️ Sorry 
       </h1>
       <h2 className="text-white text-center p-5">
-        I haven't made the page responsive yet please come back later
+        I haven't made the page responsive yet please come back later or try on a laptop
       </h2>
       <br>
       </br>
