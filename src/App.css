@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.font-link {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 200
+}
+/* .font-link {
+  font-family: 'Nunito', sans-serif;
+} */

@@ -18,7 +18,7 @@ import Docker from "./components/images/docker.png"
 
 export const projects = [
   {
-    title: "GEE and Sustainable Development Goals",
+    title: "GEE apps",
     subtitle: "Mern stack, Heroku, Google earth engine (GEE)",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
