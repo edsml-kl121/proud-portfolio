@@ -2,34 +2,28 @@
 
 import { ArrowRightIcon } from "@heroicons/react/solid";
 import React from "react";
+import {Container, Navbar, Nav, NavDropdown } from "react-bootstrap"
 
-export default function Navbar() {
+export default function Navbar2() {
   return (
-    <header className="bg-green-800 md:sticky top-0 z-10">
-      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <a className="title-font font-medium text-white mb-4 md:mb-0">
-          <a href="#about" className="ml-3 text-xl">
-            Kandanai Leenutaphong
-          </a>
-        </a>
-        <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-700	flex flex-wrap items-center text-base justify-center">
-          <a href="#projects" className="mr-5 hover:text-white">
-            Past Work
-          </a>
-          <a href="#skills" className="mr-5 hover:text-white">
-            Skills
-          </a>
-          <a href="#testimonials" className="mr-5 hover:text-white">
-            Testimonials
-          </a>
-        </nav>
-        <a
-          href="#contact"
-          className="inline-flex items-center bg-stone-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-700 rounded text-base mt-4 md:mt-0">
-          Hire Me
-          <ArrowRightIcon className="w-4 h-4 ml-1" />
-        </a>
-      </div>
-    </header>
+    <Navbar bg="success" expand="lg" sticky="top">
+      <Container>
+        <Navbar.Brand href="/">Kandanai Leenutaphong</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#workexp">Work Experience</Nav.Link>
+          </Nav>
+            <NavDropdown title={<span className="text-dark my-auto">Dropdown</span>} id="basic-nav-dropdown">
+              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
+              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+            </NavDropdown>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }

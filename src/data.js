@@ -1,5 +1,6 @@
 // src/data.js
 import Bathy from "./components/images/Bathy.png"
+import Flood from "./components/images/flood.png"
 import Thank from "./components/images/thankq.png"
 import Barcsnap from "./components/images/barcs.png"
 import Python from "./components/images/python96.png"
@@ -17,20 +18,20 @@ import Docker from "./components/images/docker.png"
 
 export const projects = [
   {
-    title: "Google Earth and Sustainable Development Goals",
-    subtitle: "react, node.js, MongoDB atlas, Heroku, Google earth engine",
+    title: "GEE and Sustainable Development Goals",
+    subtitle: "Mern stack, Heroku, Google earth engine (GEE)",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: Bathy,
-    link: "https://reactbootcamp.com",
+    image: Flood,
+    link: "https://github.com/edsml-kl121/geeimperial",
   },
   {
     title: "Flood Prediction Tool",
-    subtitle: "Jupyter, machine learning, Folium, pytest, github actions, sphinx",
+    subtitle: "Jupyter, machine learning, pytest, github actions",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: Bathy,
-    link: "https://pythonbootcamp.com",
+    image: Flood,
+    link: "https://github.com/ese-msc-2021/ads-deluge-wye",
   },
   {
     title: "BarcSnap",
@@ -39,6 +40,22 @@ export const projects = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: Barcsnap,
     link: "https://www.barcsnap.com/",
+  },
+  {
+    title: "ThankyouChef",
+    subtitle: "HTML, Mapbox API, Ruby on Rails, Heroku",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: Thank,
+    link: "https://thankyouchef.herokuapp.com/",
+  },
+  {
+    title: "ThankyouChef",
+    subtitle: "HTML, Mapbox API, Ruby on Rails, Heroku",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    image: Thank,
+    link: "https://thankyouchef.herokuapp.com/",
   },
   {
     title: "ThankyouChef",
