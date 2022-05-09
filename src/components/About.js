@@ -1,7 +1,8 @@
 // src/components/About.js
 
 import React from "react";
-import Bathy from "./images/Bathy.png"
+// import Bathy from "./images/Bathy.png"
+import Mew from "./images/Mew.png"
 import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 import {Container, Navbar, Nav, NavDropdown, Row, Col } from "react-bootstrap"
 
@@ -14,12 +15,11 @@ export default function About() {
           <br></br>
           <br></br>
           <br></br>
-          <br></br>
-          <br></br>
+
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src= {Bathy}
+            src= {Mew}
             />
         </Col>
         <Col md={1}>

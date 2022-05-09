@@ -21,50 +21,50 @@ export const projects = [
     title: "GEE apps",
     subtitle: "Mern stack, Heroku, Google earth engine (GEE)",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "App to let farmers search the optimal location to grow crops in or where to dig to find the underground water.",
     image: Flood,
     link: "https://github.com/edsml-kl121/geeimperial",
   },
   {
-    title: "Flood Prediction Tool",
-    subtitle: "Jupyter, machine learning, pytest, github actions",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: Flood,
-    link: "https://github.com/ese-msc-2021/ads-deluge-wye",
+  title: "Unirev",
+  subtitle: "React, Ruby on Rails, Heroku",
+  description:
+    "an educational startup with the aim to improve the educational experience of students, through giving a module recommendation and reviews.",
+  image: Thank,
+  link: "https://reved.herokuapp.com/",
   },
   {
     title: "BarcSnap",
     subtitle: "HTML, Barcode API, Ruby on Rails",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Collaborated with 3 developers to build an app to scan Japanese product's barcode to get information",
     image: Barcsnap,
     link: "https://www.barcsnap.com/",
   },
   {
-    title: "ThankyouChef",
-    subtitle: "HTML, Mapbox API, Ruby on Rails, Heroku",
+    title: "Flood Prediction Tool",
+    subtitle: "Jupyter, machine learning, pytest, github actions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: Thank,
-    link: "https://thankyouchef.herokuapp.com/",
+      "Producing a map to show and predict flood risks and house prices scoring distinction, collaborating with imperial students.",
+    image: Flood,
+    link: "https://github.com/ese-msc-2021/ads-deluge-wye",
   },
   {
     title: "ThankyouChef",
     subtitle: "HTML, Mapbox API, Ruby on Rails, Heroku",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Created an app to enable hiring of personal chefs to your home",
     image: Thank,
     link: "https://thankyouchef.herokuapp.com/",
   },
   {
-    title: "ThankyouChef",
-    subtitle: "HTML, Mapbox API, Ruby on Rails, Heroku",
+    title: "Personal Portfolio v1",
+    subtitle: "Vanilla JS, html, css",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "Previous portfolio made right after LeWagon bootcamp, trying to get a game-like feel",
     image: Thank,
-    link: "https://thankyouchef.herokuapp.com/",
-  },
+    link: "https://kandanai.me",
+  }
 ];
 
 export const skills = [
