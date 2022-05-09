@@ -22,7 +22,7 @@ export default function About() {
           <div className="flex justify-center">
             <a
               href="#contact"
-              className="inline-flex bg-stone-900 border-0 py-5 px-10 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+              className="inline-flex text-gray-400 bg-stone-900 border-0 py-5 px-10 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
               <FaEnvelope/>
             </a>
             <a
