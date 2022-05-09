@@ -55,7 +55,7 @@ export default function About() {
               <FaGithub/>
             </a>
             <a
-              href="https://drive.google.com/file/d/1uK07ILbwUuBQSRf1VURqV8ljrHFawYpn/view?usp=sharing"
+              href="https://drive.google.com/file/d/12Civ_-RjXZqhHVlQ_Eo76V1e6ZnsIFmc/view?usp=sharing"
               className="ml-4 inline-flex text-gray-400 border-0 py-10 px-10 text-decoration-none focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" style={{backgroundColor:"#000000"}}>
               CV
             </a>
