@@ -5,14 +5,17 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Phone from "./components/Phone";
+import Loading from "./components/loading";
 import './App.css';
 import { useState, useEffect, useRef } from "react";
 
 export default function App() {
   let isMobile = useRef(false);
+  const [loading, setLoading] = useState(true);
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => setLoading(false), 1500)
         if(window.innerWidth > 600) {
             if(isMobile.current) {
                 isMobile.current = false;
@@ -35,14 +38,17 @@ export default function App() {
   }
   else {
     return (
+      <>
+      {loading === false ? 
       <main className="text-gray-400 body-font font-link" style={{backgroundColor:"#000000"}}>
       <Navbar />
       <About />
       <Skills />
       <Projects />
-      {/* <Workexp /> */}
       <Contact />
     </main>
+      : <Loading/>}
+      </>
   )
   }
 }
