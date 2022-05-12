@@ -6,13 +6,15 @@ import { useState } from "react";
 import { projects } from "../data";
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from "./Card"
-
+import Fade from 'react-reveal/Fade';
 
 export default function Projects() {
-  const [styles, setStyles] = useState({});
-  console.log(styles);
+  // const [styles, setStyles] = useState({});
+  // console.log(styles);
   return (
+    
     <section id="projects" className="text-gray-400 body-font" style={{backgroundColor:"#000000"}}>
+    <Fade>
       <div className="container px-5 py-10 mx-auto text-center lg:px-40">
         <div className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
@@ -24,9 +26,6 @@ export default function Projects() {
           </p>
         </div>
         <Container className="px-5" style={{}}>
-        {/* <Container className="px-5">
-        <Container className="px-5">
-        <Container className="px-5"> */}
           <Row>
           {projects.map((project) => (
             <>
@@ -36,11 +35,9 @@ export default function Projects() {
               </>
           ))}
           </Row>
-        {/* </Container>
-        </Container>
-        </Container> */}
         </Container>
       </div>
+    </Fade>
     </section>
   );
 }

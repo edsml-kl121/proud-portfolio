@@ -19,8 +19,8 @@ export default function Navbar2() {
               <NavDropdown.Item href="https://www.linkedin.com/in/kandanai/">Linkedin</NavDropdown.Item>
               <NavDropdown.Item href="mailto:mew.chayutaphong@gmail.com?subject=Me&body=Hello!">Email</NavDropdown.Item>
               <NavDropdown.Item href="https://github.com/edsml-kl121">Github</NavDropdown.Item>
-              {/* <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item> */}
+              <NavDropdown.Divider />
+              <NavDropdown.Item href="https://drive.google.com/file/d/12Civ_-RjXZqhHVlQ_Eo76V1e6ZnsIFmc/view?usp=sharing"> CV </NavDropdown.Item>
             </NavDropdown>
         </Navbar.Collapse>
       </Container>

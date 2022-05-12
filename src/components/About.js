@@ -3,12 +3,18 @@
 import React from "react";
 // import Bathy from "./images/Bathy.png"
 import Mew from "./images/Mew.png"
-import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
-import {Container, Navbar, Nav, NavDropdown, Row, Col } from "react-bootstrap"
+// import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
+import {Container, Row, Col } from "react-bootstrap"
+// import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
+import { useState } from "react";
+
 
 export default function About() {
+  const [styles, setStyles] = useState({fontWeight:"400", fontSize:"30px"});
   return (
     <section id="about">
+      <Fade>
       <Container>
       <Row className="my-5">
         <Col xs={12} md={5} className="mt-5 my-5 mb-5">
@@ -27,6 +33,7 @@ export default function About() {
         <Col xs={12} md={5}>
           <br></br>
           <br></br>
+          
           <h1 className="mt-5 text-success mx-1" style={{fontWeight:"700", fontSize:"100px"}}>
               Kandanai
           </h1>
@@ -38,32 +45,26 @@ export default function About() {
             a <span className="text-success">coding bootcamp at Lewagon</span> followed by a Masters in <span className="text-success">Environmental Data Science and Machine Learning at Imperial. </span>
              I have a strong interest in bringing positive impact to Thailand with technology such as Environmental and educational aspects through startups
           </p>
-          <div className="flex justify-center mb-5">
-            <a
-              href="mailto:mew.chayutaphong@gmail.com?subject=Me&body=Hello!"
-              className="inline-flex text-gray-400 border-0 py-5 px-10 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" style={{backgroundColor:"#000000"}}>
-              <FaEnvelope/>
-            </a>
-            <a
-              href="https://www.linkedin.com/in/kandanai/"
-              className="ml-4 inline-flex text-gray-400 border-0 py-5 px-10 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" style={{backgroundColor:"#000000"}}>
-              <FaLinkedin/>
-            </a>
-            <a
-              href="https://github.com/edsml-kl121"
-              className="ml-4 inline-flex text-gray-400 border-0 py-5 px-10 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" style={{backgroundColor:"#000000"}}>
-              <FaGithub/>
-            </a>
-            <a
-              href="https://drive.google.com/file/d/12Civ_-RjXZqhHVlQ_Eo76V1e6ZnsIFmc/view?usp=sharing"
-              className="ml-4 inline-flex text-gray-400 border-0 py-10 px-10 text-decoration-none focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" style={{backgroundColor:"#000000"}}>
-              CV
-            </a>
+          <div className="text-center">
+            {/* <div className="text-center bg-stone-1000 py-1 my-2 mx-0" style = {styles} onMouseEnter={() => setStyles({border: '1px solid green', borderRadius: "10px"})}  onMouseLeave={() => setStyles({border: 'none'})}> */}
+              <a
+                href="mailto:mew.chayutaphong@gmail.com?subject=Me&body=Hello!"
+                className="text-decoration-none text-success text-center bg-stone-1000 py-2 my-2 mx-0 px-3"
+                // className="text-decoration-none text-success" 
+                onMouseEnter={() => setStyles({border: '1px solid green', borderRadius: "10px", fontWeight:"400", fontSize:"30px"})}
+                onMouseLeave={() => setStyles({border: 'none', fontWeight:"400", fontSize:"30px"})}
+                style = {styles} 
+                // style={{fontWeight:"400", fontSize:"30px"}} 
+                >
+                Contact me !
+              </a>
+            {/* </div> */}
           </div>
           <br></br>
       </Col>
       </Row>
       </Container>
+      </Fade>
     </section>
   );
 }

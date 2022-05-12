@@ -5,6 +5,7 @@ import React from "react";
 import { FaPython } from 'react-icons/fa';
 import { skills } from "../data";
 import { Container, Row, Col } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 export default function Skills() {
   return (
@@ -19,23 +20,23 @@ export default function Skills() {
             Some of the tech stacks I have used.
           </p>
         </div>
-        <div className="container">
-          {/* <div className = "flex flex-wrap"> */}
-          <Row>
-          {skills.map((skill) => (
-          <Col xs={6} md={2}>
-            <div key={skill.name} className="p-5">
-              {/* <FaPython className="text-green-600 h-20" /> */}
-              <img
-                  alt="gallery"
-                  width = "150"
-                  src={skill.image}
-                  />
-            </div>
-          </Col>
-          ))}
-          </Row>
+        <Fade left cascade>
+          <div className="container">
+            <Row>
+            {skills.map((skill) => (
+              <Col xs={6} md={2}>
+              <div key={skill.name} className="p-5">
+                <img
+                    alt="gallery"
+                    width = "150"
+                    src={skill.image}
+                    />
+              </div>
+            </Col>
+            ))}
+            </Row>
           </div>
+        </Fade>
         {/* </div> */}
       </div>
     </section>
