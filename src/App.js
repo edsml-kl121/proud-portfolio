@@ -15,24 +15,27 @@ export default function App() {
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1500)
-        if(window.innerWidth > 600) {
-            if(isMobile.current) {
-                isMobile.current = false;
-                setMobile(false);
-            }
-        } 
-        else {
-            if(!isMobile.current) {
-                isMobile.current = true;
-                setMobile(true)
-            }
-        }
+    if(window.innerWidth > 600) {
+      if(isMobile.current) {
+        isMobile.current = false;
+        setMobile(false);
+      }
+    } 
+    else {
+      if(!isMobile.current) {
+        isMobile.current = true;
+        setMobile(true)
+      }
+    }
+    setTimeout(() => setLoading(false), 500)
 }, [])
+
   if (isMobile.current) {
     return (
       <>
-      <Phone/>
+      {loading === false ? 
+      <Phone/> : <Loading/>
+      }
       </>
     )
   }

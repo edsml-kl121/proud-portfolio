@@ -34,7 +34,7 @@ export default function About() {
           <br></br>
           <br></br>
           
-          <h1 className="mt-5 text-success mx-1" style={{fontWeight:"700", fontSize:"100px"}}>
+          <h1 className="mt-5 text-success" style={{textAlign: "center", fontWeight:"700", fontSize:"100px"}}>
               Kandanai
           </h1>
             <h2 className="text-white">
