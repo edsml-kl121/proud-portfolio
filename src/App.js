@@ -33,9 +33,10 @@ export default function App() {
   if (isMobile.current) {
     return (
       <>
-      {loading === false ? 
+      {/* {loading === false ? 
       <Phone/> : <Loading/>
-      }
+      } */}
+      <Phone/> 
       </>
     )
   }
