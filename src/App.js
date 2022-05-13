@@ -15,6 +15,7 @@ export default function App() {
   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
+    setTimeout(() => setLoading(false), 500)
     if(window.innerWidth > 600) {
       if(isMobile.current) {
         isMobile.current = false;
@@ -27,7 +28,6 @@ export default function App() {
         setMobile(true)
       }
     }
-    setTimeout(() => setLoading(false), 500)
 }, [])
 
   if (isMobile.current) {
