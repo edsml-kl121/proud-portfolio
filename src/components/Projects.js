@@ -2,7 +2,7 @@
 
 import { CodeIcon } from "@heroicons/react/solid";
 // import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import { projects } from "../data";
 import { Container, Row, Col } from 'react-bootstrap';
 import Card from "./Card"
