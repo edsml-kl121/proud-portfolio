@@ -18,12 +18,12 @@ import Docker from "./components/images/docker.png"
 
 export const projects = [
   {
-    title: "GEE apps",
-    subtitle: "Mern stack, Heroku, Google earth engine (GEE)",
+    title: "Water Oracle",
+    subtitle: "Mongo DB Atlas, express, React, Node.js, Heroku, Google earth engine (GEE), Google Cloud Platform (GCP), TensorFlow",
     description:
-      "App to let farmers search the optimal location to grow crops in or where to dig to find the underground water.",
+      "App to optimize water classification using Multiview deeplearning on U-Net in Google earth engine.",
     image: Flood,
-    link: "https://github.com/edsml-kl121/geeimperial",
+    link: "https://geeimperial.herokuapp.com/",
   },
   {
   title: "Unirev",
@@ -39,7 +39,7 @@ export const projects = [
     description:
       "Collaborated with 3 developers to build an app to scan Japanese product's barcode to get information",
     image: Barcsnap,
-    link: "https://www.barcsnap.com/",
+    link: "https://github.com/2tonepantone/barcsnap",
   },
   {
     title: "Flood Prediction Tool",
@@ -47,7 +47,7 @@ export const projects = [
     description:
       "Producing a map to show and predict flood risks and house prices scoring distinction, collaborating with imperial students.",
     image: Flood,
-    link: "https://github.com/ese-msc-2021/ads-deluge-wye",
+    link: "https://github.com/edsml-kl121/FloodDetectionTool",
   },
   {
     title: "ThankyouChef",
