@@ -14,8 +14,21 @@ body {
 #loading-text {
   display: block;
   position: absolute;
-  top: 48%;
-  left: 48%;
+  top: 47%;
+  left: 40%;
+  color: "#FFFFFF";
+  width: 200px;
+  height: 100px;
+  margin: -7px 0 0 -45px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 40px;
+}
+#loading-text2 {
+  display: block;
+  position: absolute;
+  top: 46%;
+  left: 46%;
   color: "#FFFFFF";
   width: 200px;
   height: 100px;
@@ -25,16 +38,20 @@ body {
   font-size: 40px;
 }
 
+
+
 #loading-content {
   display: block;
   position: relative;
-  left: 50%;
+  left: 49%;
   top: 50%;
-  width: 400px;
-  height: 400px;
+  width: 380px;
+  height: 380px;
   margin: -200px 0 0 -185px;
   border: 3px solid #F00;
 }
+
+
 
 #loading-content:after {
   content: "";
@@ -78,6 +95,8 @@ body {
   animation: loader 3s linear infinite;
 }
 
+
+
 #loading-content:after {
   border: 5px solid transparent;
   border-top-color: 	#00FF00;
@@ -88,6 +107,8 @@ body {
     -moz-animation: loader 2s linear infinite;
   -o-animation: loader 2s linear infinite;
 }
+
+
 
 @-webkit-keyframes loaders {
   0% {

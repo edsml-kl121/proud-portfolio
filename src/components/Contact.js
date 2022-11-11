@@ -9,7 +9,7 @@ export default function Contact() {
   return (
     <section id="contact" className="relative">
         <footer>
-          <Container className="px-5 text-center">
+          <Container className=" text-center">
               <a
               href="mailto:mew.chayutaphong@gmail.com?subject=Me&body=Hello!"
               className="inline-flex text-gray-400 border-0 py-5 px-10 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg" style={{backgroundColor:"#000000"}}>

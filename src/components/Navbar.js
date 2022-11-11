@@ -8,7 +8,14 @@ export default function Navbar2() {
   return (
     <Navbar expand="lg" sticky="top" className="bg-stone-900">
       <Container>
-        <Navbar.Brand className="text-white mt-1" style={{fontWeight:"bold"}} href="/"><h4>KANDANAI LEENUTAPHONG</h4></Navbar.Brand>
+      {window.innerWidth > 600 ?
+          <>
+          <Navbar.Brand className="text-white mt-1" style={{fontWeight:"bold"}} href="/"><h4>KANDANAI LEENUTAPHONG</h4></Navbar.Brand> 
+          </> : 
+          <>
+          <Navbar.Brand className="text-white mt-1" style={{fontWeight:"bold"}} href="/"><h5>KANDANAI LEENUTAPHONG</h5></Navbar.Brand>
+          </>}
+        
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">

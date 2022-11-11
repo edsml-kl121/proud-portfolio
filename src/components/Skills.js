@@ -25,6 +25,8 @@ export default function Skills() {
             <Row>
             {skills.map((skill) => (
               <Col xs={6} md={2}>
+                {window.innerWidth > 600 ?
+                  <>
               <div key={skill.name} className="p-5">
                 <img
                     alt="gallery"
@@ -32,6 +34,17 @@ export default function Skills() {
                     src={skill.image}
                     />
               </div>
+                  </> : 
+                  <>
+              <div key={skill.name} className="p-3">
+                <img
+                    alt="gallery"
+                    width = "150"
+                    src={skill.image}
+                    />
+              </div>                  
+                  </>}
+
             </Col>
             ))}
             </Row>
