@@ -25,7 +25,7 @@ export default function Projects() {
             Most recent things I have done.
           </p>
         </div>
-        <Container className="px-5" style={{}}>
+        <Container className="" style={{}}>
           <Row>
           {projects.map((project) => (
             <>

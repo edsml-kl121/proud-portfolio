@@ -26,7 +26,7 @@ export const projects = [
     link: "https://geeimperial.herokuapp.com/",
   },
   {
-  title: "Unirev",
+  title: "RevED",
   subtitle: "React, Ruby on Rails, Heroku",
   description:
     "an educational startup with the aim to improve the educational experience of students, through giving a module recommendation and reviews.",
