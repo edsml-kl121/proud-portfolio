@@ -8,6 +8,7 @@ import {Container, Row, Col } from "react-bootstrap"
 // import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 import { useState } from "react";
+import './About.css'
 
 
 export default function About() {
@@ -17,30 +18,56 @@ export default function About() {
       <Fade>
       <Container>
       <Row className="my-5">
-        <Col xs={12} md={5} className="mt-5 my-5 mb-5">
+        <Col xs={12} md={5} className="">
+        {window.innerWidth > 600 ?
+          <>
           <br></br>
           <br></br>
-          <br></br>
-
+          <br></br> 
           <img
             className="object-cover object-center rounded"
             alt="hero"
             src= {Mew}
             />
+          </> : 
+          <>
+          <span className="">
+          <img
+            className="rounded-circle"
+            alt="hero"
+            src= {Mew}
+            style={{textAlign: "center"}}
+            // width="300"
+            />
+          </span>
+          </>}
+
         </Col>
         <Col md={1}>
         </Col>
         <Col xs={12} md={5}>
+        {window.innerWidth > 600 ?
+          <>
           <br></br>
           <br></br>
+          <br></br> 
+          </> : <></>}
           
-          <h1 className="mt-5 text-success" style={{textAlign: "center", fontWeight:"700", fontSize:"100px"}}>
+          {window.innerWidth > 600 ?
+          <>
+          <h1 className="mt-5 text-success" style={{textAlign: "center", fontWeight:"700", fontSize:"80px"}}>
               Kandanai
           </h1>
-            <h2 className="text-white">
+          </> : 
+          <h2 className="mt-5 text-success" style={{textAlign: "center", fontWeight:"700", fontSize:"80px"}}>
+              Kandanai
+          </h2>
+          }
+
+            <h2 className="text-white text-center">
               A Software Engineer / Data Scientist
             </h2>
-          <p className="text-left">
+          <p className="text-center">
             I have graduated with a bachelor in <span className="text-success">mathematics at Warwick </span>, then became interested in coding and went to 
             a <span className="text-success">coding bootcamp at Lewagon</span> followed by a Masters in <span className="text-success">Environmental Data Science and Machine Learning at Imperial. </span>
              I have a strong interest in bringing positive impact to Thailand with technology such as Environmental and educational aspects through startups

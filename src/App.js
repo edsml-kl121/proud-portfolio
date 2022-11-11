@@ -10,37 +10,37 @@ import './App.css';
 import { useState, useEffect, useRef } from "react";
 
 export default function App() {
-  let isMobile = useRef(false);
+  // let isMobile = useRef(false);
   const [loading, setLoading] = useState(true);
-  const [mobile, setMobile] = useState(false);
+//   const [mobile, setMobile] = useState(false);
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 500)
-    if(window.innerWidth > 600) {
-      if(isMobile.current) {
-        isMobile.current = false;
-        setMobile(false);
-      }
-    } 
-    else {
-      if(!isMobile.current) {
-        isMobile.current = true;
-        setMobile(true)
-      }
-    }
+//     if(window.innerWidth > 600) {
+//       if(isMobile.current) {
+//         isMobile.current = false;
+//         setMobile(false);
+//       }
+//     } 
+//     else {
+//       if(!isMobile.current) {
+//         isMobile.current = true;
+//         setMobile(true)
+//       }
+//     }
 }, [])
 
-  if (isMobile.current) {
-    return (
-      <>
-      {/* {loading === false ? 
-      <Phone/> : <Loading/>
-      } */}
-      <Phone/> 
-      </>
-    )
-  }
-  else {
+//   if (isMobile.current) {
+//     return (
+//       <>
+//       {/* {loading === false ? 
+//       <Phone/> : <Loading/>
+//       } */}
+//       <Phone/> 
+//       </>
+//     )
+//   }
+//   else {
     return (
       <>
       {loading === false ? 
@@ -54,5 +54,5 @@ export default function App() {
       : <Loading/>}
       </>
   )
-  }
+  // }
 }

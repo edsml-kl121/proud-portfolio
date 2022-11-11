@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade';
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="techstacks">
       <div className="container px-5 py-5 mx-auto">
         <div className="text-center mb-20">
           <ChipIcon className="w-10 inline-block mb-4" />
